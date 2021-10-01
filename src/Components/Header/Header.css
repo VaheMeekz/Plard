@@ -5,15 +5,15 @@ header {
     align-items: center;
     justify-content: center;
 }
-.loginBtn{
-    text-decoration: none;
-    color: grey;
-    font-size: 20px;
-}
 .logoutBtn{
     position: absolute;
     margin-left: 5px;
     margin-top: 5px;
+}
+
+.loginBtn{
+    font-size: 20px;
+    color: grey;
 }
 .hed-item {
     width: 80%;

@@ -5,15 +5,15 @@ import ring from "../../Svg/ring.jpg"
 import edit from "../../Svg/edit.png"
 import Adder from "../Product/Comp-Product/Adder/Adder";
 import Edit from "../Edit/Edit";
+import hhh from "../../Svg/archive.svg"
+import save from "../../Svg/check-circle.svg";
 
 const Content = () => {
 
-    const {item, setItem, editItem} = useItem()
+    const {item, setItem, addIt, editItem, deleteSkills} = useItem()
 
 
     const [showEdit, setShowEdit] = useState({})
-
-
     const [editValue, setEditValue] = useState({})
 
 
@@ -27,17 +27,17 @@ const Content = () => {
                             <div className={css.contentItemInfo}>
                                 <div>{name}</div>
                                 <div>{price}</div>
-                                <div>
-
-                                </div>
-
-                                   {/*{showEdit[id]*/}
-                                   {/* ? <input*/}
-                                   {/*     value={editValue[id]}*/}
-                                   {/*     onChange={e => setEditValue({[id]: e.target.value})}*/}
-                                   {/*     type="text"*/}
-                                   {/* />*/}
-                                   {/* : null}*/}
+                                {showEdit[id]
+                                    ?   <div className={css.editInput}>
+                                            <input
+                                            className={css.editInp}
+                                            value={editValue[id]}
+                                            onChange={e => setEditValue({[id]: e.target.value})}
+                                            type="text"
+                                            />
+                                         </div>
+                                    : null
+                                }
                                 <button
                                     className={css.editBtn}
                                     onClick={showEdit[id]
@@ -50,7 +50,13 @@ const Content = () => {
                                             setEditValue({[id]: name})
                                         }}
                                 >
-                                    {showEdit[id] ? "Save" : <img src={edit}/>}
+                                    {showEdit[id] ? <img src={save} className={css.saveBtn}/> : <img src={edit}/>}
+                                </button>
+                                <button
+                                    className={css.deleteBtn}
+                                    onClick={() => deleteSkills(id)}
+                                >
+                                    <img src={hhh}/>
                                 </button>
 
                             </div>

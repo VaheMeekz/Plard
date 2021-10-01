@@ -4,33 +4,33 @@ import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import man from "../../../Svg/Vector.svg"
 
-export const AddCategory = (props) => {
+export const AddCategory2 = (props) => {
   const adds = () => {
-    if (props.newcategory !== "") {
-      props.setcategory([
-        ...props.category,
+    if (props.newcategory2 !== "") {
+      props.setcategory2([
+        ...props.category2,
         {
-          img: props.img,
-          name: props.newcategory,
+          img: props.img2,
+          name: props.newcategory2,
           data: [],
         },
       ]);
-      props.setImg(null);
+      props.setImg2(null);
     }
   };
 
   useEffect(() => {
-    props.setstate2(props.category.filter((s) => s.id !== 2));
-  }, [props.category]);
+    props.setstate2(props.category2.filter((s) => s.id !== 1));
+  }, [props.category2]);
 
   const onImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
-      props.setImg(URL.createObjectURL(event.target.files[0]));
+      props.setImg2(URL.createObjectURL(event.target.files[0]));
     }
   };
 
   return (
-    <div className={`${props.cl2 ? "addCategory" : "addCategorynone"}`}>
+    <div className={`${props.cl ? "addCategory" : "addCategorynone"}`}>
       <p
         onClick={() => {
           props.add();
@@ -74,7 +74,7 @@ export const AddCategory = (props) => {
                 props.setaddclass2(false);
               }}
             >
-             <img src={man}/>
+                <img src={man}/>
               <span>мужской</span>
             </NavLink>
           </div>
@@ -82,8 +82,8 @@ export const AddCategory = (props) => {
             type="text"
             className="text"
             placeholder="Категория"
-            value={props.newcategory}
-            onChange={props.onChText}
+            value={props.newcategory2}
+            onChange={props.onChText2}
           />
           <div className="item-file">
             <input
@@ -93,15 +93,15 @@ export const AddCategory = (props) => {
               }}
             />
             <p>{stateSvg.Svg3}</p>
-            <img src={props.img} />
-            {/*<p*/}
-            {/*  className="ii"*/}
-            {/*  onClick={() => {*/}
-            {/*    props.setImg(null);*/}
-            {/*  }}*/}
-            {/*>*/}
-            {/*  /!*<i className="far fa-times-circle"></i>*!/*/}
-            {/*</p>*/}
+            <img src={props.img2} />
+            <p
+              className="ii"
+              onClick={() => {
+                props.setImg2(null);
+              }}
+            >
+             `
+            </p>
             <span>
               загрузить
               <br />
@@ -111,9 +111,8 @@ export const AddCategory = (props) => {
           <button
             onClick={() => {
               adds();
-              props.add();
-              props.setnewcategory("");
-              if (props.newcategory !== "") {
+              props.setnewcategory2("");
+              if (props.newcategory2 !== "") {
                 props.close();
               }
             }}

@@ -1,9 +1,9 @@
 import React, {useRef, useEffect, useCallback} from "react";
-import ImageUploading from "react-images-uploading";
 import {useState} from "react";
 import css from "./Adder.module.css";
 import {useItem} from "../../../../Providers/ItemProvider";
 import close from "../../../../Svg/x.svg"
+import ImageUploading from "react-images-uploading";
 
 const Adder = ({showModal, setShowModal}) => {
     const modalRef = useRef();

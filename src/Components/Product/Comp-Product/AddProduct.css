@@ -1,8 +1,8 @@
-.addclass{
+.addclass {
     z-index: 1;
     position: absolute;
     right: 0;
-    top: 400px;
+    top: 50%;
     width: 50px;
     height: 50px;
     display: flex;
@@ -13,12 +13,27 @@
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-.addBtn{
-    outline: 0;
-    background: #C10016;
-    border: 0;
-    cursor: pointer;
+.addProduct {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background-color: #F2F2F2;
+    top: 25%;
+    right: 31%;
+    border-radius: 5px;
+}
+
+.addCategory2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxCategory2{
+    width: 110px;
+    height: 74px;
+    margin: 5px;
 }
