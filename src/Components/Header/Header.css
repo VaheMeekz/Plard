@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBtn{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+.logoutBtn{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.hed-item {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 12px 0;
+}
+
+.hed-item-p1 {
+    position: relative;
+    width: 100px;
+    height: 64px;
+}
+
+.hed-item-p1 img {
+    width: 107px;
+    position: absolute;
+    top: -6px;
+}
+
+
+.hed-item-p2 {
+    color: #4F4F4F;
+    transition: .3s;
+}
+
+.hed-item-p2:hover {
+    color: #a70000;
+}
+
+.hed-item-search {
+    width: 30%;
+    position: relative;
+}
+
+.hed-item-search input {
+    padding-left: 15px;
+    height: 31px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #E8EAEB;
+    border: none;
+}
+
+.hed-item-search input:focus-visible {
+    outline: none;
+}
+
+.hed-item-search span {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #C10016;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5px;
+    top: 4px;
+    font-size: 13px;
+}
+
+.hed-item-search i {
+    color: white;
+}
+
+
+
+
+
+
+

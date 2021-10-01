@@ -1,0 +1,117 @@
+.subcategory {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.addSubcategory {
+    cursor: pointer;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #777777;
+    margin-left: 30px;
+    position: relative;
+}
+
+.subcategory p {
+    color: #4F4F4F;
+    cursor: pointer;
+    margin: 0 20px;
+    z-index: 1;
+}
+
+.window-subcategory {
+    position: absolute;
+    width: 345px;
+    height: 163px;
+    background-color: white;
+    border-radius: 5px;
+    top: 59px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.cont-window {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    position: relative;
+}
+
+.cont-window h3 {
+    color: #2E2E2E;
+    font-size: 17px;
+}
+
+.cont-window input {
+    border: none;
+    border-bottom: 1px solid #C1C1C1;
+    margin: 20px 0;
+    padding-bottom: 8px;
+    font-size: 15px;
+    color: #4F4F4F;
+}
+
+.cont-window input:focus-visible{
+    outline: none;
+}
+
+.subCategoryAdderBody{
+    position: absolute;
+    margin-left: 800px;
+
+}
+.productImg{
+   width: 70px;
+    height: 35px;
+    padding: 5px;
+    background: white;
+    border: 1px solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-window button{
+    border: none;
+    background-color: #C10016;
+    color: white;
+    border-radius: 21px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.contWindowClose{
+    position: absolute;
+    right: -18px;
+    top: -3px;
+    font-size: 22px;
+}
+
+.close-subcategory{
+    display: none;
+}
+
+.subcatecoryAdder{
+    background: #a70000;
+    color: wheat;
+    width: 20px;
+    height: 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+

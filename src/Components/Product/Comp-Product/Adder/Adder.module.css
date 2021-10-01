@@ -1,0 +1,233 @@
+
+.activeLink:hover {
+    border: 1px solid #C10016;
+}
+
+.addBtnBody {
+    position: relative;
+}
+
+.aderForm {
+    margin: 50px 30px;
+}
+
+.addBtn {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: -5px;
+    width: 40px;
+    height: 100px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addBtn:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.adder {
+    z-index: 5;
+    width: 800px;
+    height: 600px;
+    padding: 15px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-left: -500px;
+    margin-top: 1px;
+}
+
+.closeBtn {
+    border: 0;
+    background: white;
+    outline: 0;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: 390px;
+}
+
+.adderBtn {
+    width: 150px;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 400px;
+}
+
+h5 {
+    font-size: 18px;
+    color: #4F4F4F;
+}
+
+.adderBtnUpd {
+    width: 150px;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -90px;
+    margin-left: 90px;
+}
+
+.addFormBtn {
+    width: 150px;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 370px;
+    margin-left: 210px;
+}
+
+.addFormBtn:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.uploadImageWrapper {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 210px;
+}
+
+.imageItem {
+    position: absolute;
+    margin-top: -480px;
+    margin-left: -150px;
+}
+
+.imageItemImg {
+
+}
+
+.ImageUploadingParagraph {
+    position: absolute;
+    margin-top: 350px;
+}
+
+.AdderInputs {
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: 0;
+    margin: 15px;
+}
+
+.adderInputsBox {
+    margin-top: 20px;
+}
+
+.AdderInputs:hover {
+    border: 1px solid black;
+}
+
+.adderButton {
+    width: 180px;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    background-color: #a70000;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 180px;
+}
+
+.adderButton:hover {
+    border: 1px solid black;
+}
+
+.ItemBox {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: black;
+}
+
+.bodyBox {
+    position: relative;
+}
+
+.itemBodyBox {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: -25px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: black;
+}
+
+.itemBodyBoxImg {
+    position: absolute;
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.itemBodyBoxText {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: -18px;
+}
+
+.bodyBoxOne {
+    position: relative;
+}
+
+.itemBodyBoxOne {
+    position: absolute;
+    margin-left: 520px;
+    margin-top: -25px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: black;
+}
+
+.bodyBoxTwo {
+    position: relative;
+}
+
+.itemBodyBoxTwo {
+    position: absolute;
+    margin-left: 750px;
+    margin-top: -25px;
+    width: 200px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: black;
+}
+
+.adderName {
+    margin: 5px 25px;
+    font-size: 20px;
+}

@@ -1,0 +1,24 @@
+.addclass{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 400px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C10016;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.addBtn{
+    outline: 0;
+    background: #C10016;
+    border: 0;
+    cursor: pointer;
+}

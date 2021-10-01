@@ -1,0 +1,52 @@
+.registrationFildsItems{
+    width: 230px;
+    height: 25px;
+    border: 1px solid #282c34;
+    border-radius:15px;
+    background-color: white;
+    margin: 8px;
+}
+
+.registrationFildsItemsBtn{
+    width: 150px;
+    height: 25px;
+    border: 1px solid red;
+    border-radius:15px;
+    color: white;
+    background-color: red;
+    margin: 5px 50px 10px 50px;
+}
+.loginBody{
+    width: 650px;
+    height: 390px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    position: relative;
+    margin-left: 600px;
+    margin-top: -30%;
+    background-color: #FFFFFF;
+    z-index: 5;
+
+}
+
+.loginFilds{
+    margin-left: -250px;
+    text-align: left;
+    color: #282c34;
+}
+.loginImageBody{
+    position: absolute;
+}
+.loginImage{
+    position: absolute;
+    margin-left: 50px;
+}
+.loginImageText{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 130px;
+    color: white;
+    font-size: 25px;
+}
