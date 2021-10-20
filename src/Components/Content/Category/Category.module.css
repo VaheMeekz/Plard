@@ -1,0 +1,68 @@
+.category{
+    position: absolute;
+}
+
+.genterBox{
+    position: relative;
+    left: 140px;
+    top: 40px;
+    z-index: 2;
+}
+
+.genderBody{
+    width: 35px;
+    height: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+    background: #FFFFFF;
+    cursor: pointer;
+    padding: 5px;
+    margin: 20px;
+}
+
+.addCategoryBox{
+    position: absolute;
+    left: 280px;
+    top: 30px;
+}
+
+.categoryAddBtn{
+    width: 55px;
+    height: 100px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+}
+
+.newCategoryBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.staticCategory{
+    display: flex;
+    justify-content: space-around;
+}
+
+.categoryItem{
+    width: 150px;
+    height: 115px;
+    background: #FFFFFF;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.categoryItemImg{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.categoryItemBtn{
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}

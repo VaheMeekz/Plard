@@ -1,68 +1,35 @@
 import React, {useState} from 'react';
-import {useItem} from "../../Providers/ItemProvider";
-import css from "./Content.module.css"
-import ring from "../../Svg/ring.jpg"
-import edit from "../../Svg/edit.png"
-import Adder from "../Product/Comp-Product/Adder/Adder";
-import Edit from "../Edit/Edit";
-import hhh from "../../Svg/archive.svg"
-import save from "../../Svg/check-circle.svg";
+import css from './Content.module.css'
+import Category from "./Category/Category";
+import Item from "./AddItem/Item/Item";
+import FilterBox from "../Filter/FilterBox";
+import {useSelector} from "react-redux";
+
 
 const Content = () => {
 
-    const {item, setItem, addIt, editItem, deleteSkills} = useItem()
+    const ItemW = useSelector(state => state.ItemReducer.ItemW)
+    const ItemM = useSelector(state => state.ItemReducer.ItemM)
+    const filprice = useSelector(state => state.ItemReducer.price)
+    const filweight = useSelector(state => state.ItemReducer.weight)
+
+    const [stateW,setStateW] = useState(ItemW)
+    const [filpriceArr,setFilprice] = useState(filprice)
+    const [filweightArr,setFilweight] = useState(filweight)
 
 
-    const [showEdit, setShowEdit] = useState({})
-    const [editValue, setEditValue] = useState({})
+    const [num,setNum] = useState(ItemW)
+    const [numM,setNumM] = useState(ItemM)
 
-
+    console.log(num, 'num')
     return (
-        <div className={css.content}>
-            <div className={css.contentBox}>
-                {item.map(({id, name, price, img}) => {
-                    return (
-                        <div className={css.contentItem} key={id}>
-                            <div className={css.contentItemImg}><span>{img}</span></div>
-                            <div className={css.contentItemInfo}>
-                                <div>{name}</div>
-                                <div>{price}</div>
-                                {showEdit[id]
-                                    ?   <div className={css.editInput}>
-                                            <input
-                                            className={css.editInp}
-                                            value={editValue[id]}
-                                            onChange={e => setEditValue({[id]: e.target.value})}
-                                            type="text"
-                                            />
-                                         </div>
-                                    : null
-                                }
-                                <button
-                                    className={css.editBtn}
-                                    onClick={showEdit[id]
-                                        ? () => {
-                                            editItem(id, editValue[id])
-                                            setShowEdit({})
-                                        }
-                                        : () => {
-                                            setShowEdit({[id]: true})
-                                            setEditValue({[id]: name})
-                                        }}
-                                >
-                                    {showEdit[id] ? <img src={save} className={css.saveBtn}/> : <img src={edit}/>}
-                                </button>
-                                <button
-                                    className={css.deleteBtn}
-                                    onClick={() => deleteSkills(id)}
-                                >
-                                    <img src={hhh}/>
-                                </button>
 
-                            </div>
-                        </div>
-                    );
-                })}
+        <div className={css.contentBox}>
+            <div className={css.content}>
+                <Category setStateW={setStateW} num={num} setNum={setNum} numM={numM} setNumM={setNumM}
+                          filpriceArr={filpriceArr} setFilprice={setFilprice} filweightArr={filweightArr} setFilweight={setFilweight}/>
+                <Item num={num} numM={numM} filpriceArr={filpriceArr} setFilprice={setFilprice} filweightArr={filweightArr} setFilweight={setFilweight}/>
+                <FilterBox/>
             </div>
         </div>
     );

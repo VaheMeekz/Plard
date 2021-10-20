@@ -1,79 +1,18 @@
-.content {
-    width: 1520px;
-    text-align: center;
-}
-
-.contentBox {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.contentItemBox {
-    list-style: none;
-    text-decoration: none;
-}
-
-.contentItem {
-    width: 200px;
-    height: 170px;
-    background: white;
-    border: 1px solid lightslategrey;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.contentItemImg {
-    width: 100px;
-    height: 80px;
-    border: 1px solid white;
-    border-radius: 15px;
-}
-
-.contentItemInfo {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 35px 10px 3px 10px;
-}
-
-.editBtn {
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    background: none;
-}
-
-.deleteBtn{
-    outline: 0;
-    border: 0;
-    cursor: pointer;
-    background: none;
-}
-
-.saveBtn{
-    margin: 5px;
-    background: none;
-}
-
-.editInp{
-    background: white;
-    border: 1px solid lightslategrey;
-    border-radius: 8px;
-    outline: 0;
-    height: 25px;
-    width: 160px;
-    padding: 5px;
-}
-
-.editInput{
+.content{
     position: absolute;
-    margin-top: -30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+}
 
+.contentBox{
+    width: 100%;
+    height: 85vh;
+    background-image: url("../../assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,0 +1,57 @@
+.subNameBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subName {
+    margin: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.subCatAdderBox{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 130px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius:10px;
+    background-color: #FFFFFF;
+}
+
+.subCatAdderInp{
+    width: 200px;
+    height: 30px;
+    outline: 0;
+    margin: 5px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.subCatAdderBtn{
+    margin: 5px;
+    width: 150px;
+    height: 30px;
+    outline: 0;
+    border: 1px solid #0008C1;
+    background-color: #0008C1;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.addBtn{
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+}

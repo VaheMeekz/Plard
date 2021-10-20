@@ -1,0 +1,67 @@
+.filterBoxBody , .filterBox {
+    position: relative;
+}
+
+.filterBoxBodyB {
+    position: fixed;
+    top: 300px;
+    left: 1870px;
+}
+
+.filterBoxName {
+    font-size: 18px;
+    background-color: #0008C1;
+    width: 50px;
+    padding: 15px 5px 15px 5px;
+    border: 1px solid #0008C1;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+
+.filterBody{
+    width: 300px;
+    height: 320px;
+    z-index: 10;
+    background: #FFFFFF;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    position: fixed;
+   right: 100px;
+    top: 300px;
+}
+
+.filVal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.filValItm{
+    width: 55px;
+    height: 25px;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.filBtn{
+    width: 110px;
+    height: 30px;
+    background: #0008C1;
+    border: 1px solid  #0008C1;
+    border-radius: 10px;
+    outline: 0;
+    color: #FFFFFF;
+    margin-top: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+

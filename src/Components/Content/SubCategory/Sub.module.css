@@ -1,0 +1,22 @@
+.subBox {
+    position: relative;
+}
+
+.subBoy {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: -530px;
+}
+
+.Btn{
+    width: 40px;
+    height: 35px;
+    margin-left: 5px;
+    background: #FFFFFF;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -5,21 +5,12 @@ header {
     align-items: center;
     justify-content: center;
 }
-.logoutBtn{
-    position: absolute;
-    margin-left: 5px;
-    margin-top: 5px;
-}
 
-.loginBtn{
-    font-size: 20px;
-    color: grey;
-}
 .hed-item {
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     cursor: pointer;
     padding: 12px 0;
 }
@@ -43,7 +34,7 @@ header {
 }
 
 .hed-item-p2:hover {
-    color: #a70000;
+    color: #0008C1;
 }
 
 .hed-item-search {
@@ -69,7 +60,7 @@ header {
     width: 23px;
     height: 23px;
     border-radius: 50%;
-    background-color: #C10016;
+    background-color: #0008C1;
     display: flex;
     align-items: center;
     justify-content: center;

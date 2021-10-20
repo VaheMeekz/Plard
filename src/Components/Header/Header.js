@@ -1,38 +1,36 @@
 import "./Header.css";
-import Logo from "../../Logo-Image/Logo.png";
-import logoutImg from "../../Svg/box-arrow-in-right (1).svg"
-import {NavLink, useHistory} from "react-router-dom";
-import {LOGIN_PAGE} from "../../utils/urls";
+import {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {ItemReducer} from "../../Redux/Reducers/Item.reducer";
+import {nameAC} from "../../Redux/Actions/item.actions";
 
-export const Header = () => {
+const Header = (props) => {
 
+    const [value, setValue] = useState('')
 
-  const history = useHistory();
+    const name = useSelector(state => state.ItemReducer.name)
+    const dispatch = useDispatch();
 
-  const logout = () => {
-    localStorage.removeItem('token')
-
-    if (!localStorage.getItem('token')) {
-      history.push(LOGIN_PAGE)
-      window.location.reload()
+    const setName = (e) => {
+        setValue(e.target.value)
     }
-  }
-  return (
-    <header>
-      <div className="hed-item">
-        <p className="hed-item-p1">
-          <img src={Logo} alt="" />
-        </p>
-        <div className="hed-item-search">
-          <input type="search" placeholder="Поиск" />
-          <span>
-            <i className="fas fa-search"></i>
-          </span>
-        </div>
-        <p className="hed-item-p2">
-          {!localStorage.getItem('token') &&  <NavLink className={"loginBtn"} to={LOGIN_PAGE}><b>Вход</b></NavLink> }
-          {localStorage.getItem('token') && <b className={"loginBtn"} onClick={logout}> <b>выход</b><span  className={"logoutBtn"}><img src={logoutImg}/></span></b>}        </p>
-      </div>
-    </header>
-  );
+
+    useEffect(()=>{
+        dispatch(nameAC(value))
+    },[value])
+
+    return (
+        <header>
+            <div className="hed-item">
+                <div className="hed-item-search">
+                    <input type="search" placeholder="Поиск" value={value}
+                           onChange={setName}/>
+                </div>
+            </div>
+        </header>
+    );
 };
+
+export default Header;
+
+

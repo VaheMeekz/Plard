@@ -1,0 +1,28 @@
+.adderBody {
+    position: absolute
+}
+
+.adderBox {
+    z-index: 9;
+    position: fixed;
+    /* top: 200px; */
+    top: 500px;
+    left: -6px;
+    /* left: -410px; */
+    width: 29px;
+    height: 30px;
+    background: #0008C1;
+    border: 1px solid #0008C1;
+    border-radius: 0 15px 15px 0;
+    text-align: left;
+    padding: 5px;
+}
+
+.adder {
+    color: #FFFFFF;
+    font-weight: bold;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
